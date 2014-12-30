@@ -1,0 +1,47 @@
+object Form1: TForm1
+  Left = 591
+  Height = 166
+  Top = 510
+  Width = 448
+  AllowDropFiles = True
+  Caption = 'css合并器 新京报网 技术中心 出品'
+  ClientHeight = 166
+  ClientWidth = 448
+  OnCreate = FormCreate
+  OnDropFiles = FormDropFiles
+  LCLVersion = '1.2.6.0'
+  object ListBox1: TListBox
+    Left = 8
+    Height = 164
+    Top = 336
+    Width = 568
+    ItemHeight = 0
+    TabOrder = 0
+    Visible = False
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 65
+    Top = 504
+    Width = 568
+    Caption = '开始压缩！'
+    OnClick = Button1Click
+    TabOrder = 1
+    Visible = False
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 124
+    Top = 16
+    Width = 394
+    Caption = '使用方法：拖拽多个css文件到此处，'#13#10'会自动合并成一个css文件。'#13#10#13#10'注意事项：请勿在中文目录下操作。'
+    Font.CharSet = GB2312_CHARSET
+    Font.Height = -24
+    Font.Name = '微软雅黑'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label1Click
+  end
+end
