@@ -1,0 +1,4 @@
+CssAllToOne
+===========
+
+CssAllToOne::freepascal::lazarus
